@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+App__background {
+	z-index: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App__header {
+	z-index: 1;
+	display: flex;
+	justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App__navigation-button {
+	z-index: 1;
+	display: inline-flexbox;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 400px;
+	padding: 0.7em 2em;
+	border: 0.1em solid #000000;
+	margin: 0 5em 0.2em 0;
+	border-radius: 0.12em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: x-large;
+	color: #000000;
+	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+	background-color: #ffffff;
+	text-align: center;
+	transition: all 0.15s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App__navigation-button:active {
+	color: #bbbbbb;
+	border-color: #bbbbbb;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App__navigation-button:hover {
+	text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+	color: #aaaaaa;
+	border-color: #ffffff;
 }

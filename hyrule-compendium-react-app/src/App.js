@@ -1,10 +1,12 @@
+import './App.css';
 import React, { useState } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
-import './App.css';
-import BotwCompendium from './components/DataTable/BotwCompendium';
 import DataTable from './components/DataTable/BotwCompendium';
+import BotwCompendium from './components/DataTable/BotwCompendium';
+import AboutCompendium from './components/AboutCompendium/AboutCompendium';
 import SearchCompendium from './components/SearchCompendium/SearchCompendium';
-import DetailsTest from './components/DetailsTest/DetailsTest';
+import Details from './components/Details/Details';
+import { Route, Routes, Link } from 'react-router-dom';
 
 function App() {
 	const [searchCompendium, setSearchCompendium] = useState('');
@@ -24,30 +26,39 @@ function App() {
 			</header>
 			<main>
 				<nav className='App__navigation'>
-					<input
-						className='App__navigation-button'
-						type='button'
-						value='Compendium'
-					/>
-					<input
-						className='App__navigation-button'
-						type='button'
-						value='Search'
-					/>
-					<input
-						className='App__navigation-button'
-						type='button'
-						value='About'
-					/>
+					<Link to='/Compendium'>
+						<input
+							className='App__navigation-button'
+							type='button'
+							value='Compendium'
+						/>
+					</Link>
+					<Link to='/SearchCompendium'>
+						<input
+							className='App__navigation-button'
+							type='button'
+							value='Search'
+						/>
+					</Link>
+					<Link to='/AboutCompendium'>
+						<input
+							className='App__navigation-button'
+							type='button'
+							value='About'
+						/>
+						<img
+							className='App__background'
+							src='https://www.zeldadungeon.net/wiki/images/d/d6/Link_looking_over_BOTW_Hyrule.jpg'
+							alt='Breath of the Wild Background Image'
+						/>
+					</Link>
 				</nav>
-				<img
-					className='App__background'
-					src='https://www.zeldadungeon.net/wiki/images/d/d6/Link_looking_over_BOTW_Hyrule.jpg'
-					alt='Breath of the Wild Background Image'
-				/>
-				<SearchCompendium />
-				<BotwCompendium />
-				<DetailsTest />
+				<Routes>
+					<Route path='/SearchCompendium' element={<SearchCompendium />} />
+					<Route path='/Details' element={<Details />} />
+					<Route path='/Compendium' element={<BotwCompendium />} />
+					<Route path='/AboutCompendium' element={<AboutCompendium />} />
+				</Routes>
 			</main>
 		</div>
 	);

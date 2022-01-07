@@ -1,9 +1,22 @@
+import React, { useState } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import './App.css';
-import BotwCompendium from './components/BotwCompendium/BotwCompendium';
-import DataTable from './components/BotwCompendium/BotwCompendium';
+import BotwCompendium from './components/DataTable/BotwCompendium';
+import DataTable from './components/DataTable/BotwCompendium';
+import SearchCompendium from './components/SearchCompendium/SearchCompendium';
+import DetailsTest from './components/DetailsTest/DetailsTest';
 
 function App() {
+	const [searchCompendium, setSearchCompendium] = useState('');
+
+	function handleChange(event) {
+		setSearchCompendium(event.target.value);
+	}
+	function handleSubmit(event) {
+		event.preventDefault();
+		BotwCompendium();
+	}
+
 	return (
 		<div>
 			<header>
@@ -32,7 +45,9 @@ function App() {
 					src='https://www.zeldadungeon.net/wiki/images/d/d6/Link_looking_over_BOTW_Hyrule.jpg'
 					alt='Breath of the Wild Background Image'
 				/>
+				<SearchCompendium />
 				<BotwCompendium />
+				<DetailsTest />
 			</main>
 		</div>
 	);

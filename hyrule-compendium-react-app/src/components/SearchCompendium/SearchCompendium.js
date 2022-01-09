@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+const searchBar = document.getElementById('searchBar');
+
 function SearchCompendium() {
 	const [searchCompendium, setSearchCompendium] = useState([]);
 
@@ -16,7 +18,8 @@ function SearchCompendium() {
 			</label>
 			<input
 				type='text'
-				id='search'
+				name='searchBar'
+				id='searchBar'
 				placeholder='master sword'
 				required
 				onChange={handleChange}

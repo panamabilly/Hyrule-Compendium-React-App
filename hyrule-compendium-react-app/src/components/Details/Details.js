@@ -19,7 +19,8 @@ function Details(props) {
 	const { id } = useParams();
 
 	useEffect(() => {
-		const url = 'https://botw-compendium.herokuapp.com/api/v2/entry/360';
+		const url = `${entryurl}${id}`;
+		console.log(id);
 		fetch(url)
 			.then((response) => response.json())
 			.then((json) => {

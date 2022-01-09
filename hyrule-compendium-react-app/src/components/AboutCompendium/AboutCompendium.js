@@ -2,15 +2,22 @@ import React from 'react';
 
 function AboutCompendium(props) {
 	return (
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-			delectus temporibus tempore! Sed officiis asperiores minus dicta,
-			aspernatur architecto quam atque, tempora optio perferendis veritatis
-			voluptates facere quas, ullam officia. Lorem ipsum dolor sit amet
-			consectetur adipisicing elit. Voluptas explicabo dolorum obcaecati
-			provident numquam illum consequatur qui? Necessitatibus ipsa ducimus
-			fugiat fugit sunt quasi quod qui quisquam dolor. Minima, excepturi.
-		</p>
+		<main>
+			<p>
+				Please click on the Compendium Button to see the entire Breathe of the
+				Wild Compendium separated into 6 categories. Non-Food Creatures, Food
+				Creatures, Equipment, Monsters, Materials and Treasures.
+			</p>
+			<p>
+				If you need to search a item detail please click on the Search button.
+				You are able to search the compendium by name. Spaces in the name need
+				to be represented as a underscores, Ex. "master_sword".
+			</p>
+			<p>
+				Many thanks to Aarav Borthakur for creating the BOTW: Hyrule Compendium
+				API and Nintendo for the image/art used in this page.{' '}
+			</p>
+		</main>
 	);
 }
 

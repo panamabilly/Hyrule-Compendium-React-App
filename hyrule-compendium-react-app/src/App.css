@@ -6,6 +6,8 @@ App__background {
 	z-index: 1;
 	display: flex;
 	justify-content: center;
+	background-color: white;
+	color: black;
 }
 
 .App__navigation-button {
@@ -15,7 +17,7 @@ App__background {
 	justify-content: space-evenly;
 	width: 400px;
 	padding: 0.7em 2em;
-	border: 0.1em solid #000000;
+	border: 0.1em solid black;
 	margin: 0 5em 0.2em 0;
 	border-radius: 0.12em;
 	box-sizing: border-box;
@@ -23,9 +25,9 @@ App__background {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: x-large;
-	color: #000000;
+	color: black;
 	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
-	background-color: #ffffff;
+	background-color: white;
 	text-align: center;
 	transition: all 0.15s;
 }
@@ -38,4 +40,12 @@ App__background {
 	text-shadow: 0 0 2em rgba(255, 255, 255, 1);
 	color: #aaaaaa;
 	border-color: #ffffff;
+}
+
+.App__navigation {
+	background-color: white;
+}
+
+div {
+	background-color: white;
 }

@@ -7,17 +7,17 @@ const equipcolumns = [
 	{ field: 'attack', headerName: 'Attack', width: 70 },
 	{ field: 'defense', headerName: 'Defense', width: 70 },
 	{ field: 'common_locations', headerName: 'Common Locations', width: 300 },
-	{ field: 'description', headerName: 'Description', width: 1100 },
-	{ field: 'image', headerName: 'Image', width: 100 },
+	{ field: 'description', headerName: 'Description', width: 1200 },
+	{ field: 'image', headerName: 'Image', width: 600 },
 ];
 
 const monstercolumns = [
 	{ field: 'id', headerName: 'ID', width: 70 },
 	{ field: 'name', headerName: 'Name', width: 200 },
 	{ field: 'common_locations', headerName: 'Common Locations', width: 300 },
-	{ field: 'drops', headerName: 'Drops', width: 500 },
-	{ field: 'description', headerName: 'Description', width: 1100 },
-	{ field: 'image', headerName: 'Image', width: 100 },
+	{ field: 'drops', headerName: 'Drops', width: 900 },
+	{ field: 'description', headerName: 'Description', width: 1500 },
+	{ field: 'image', headerName: 'Image', width: 600 },
 ];
 
 const materialscolumns = [
@@ -25,8 +25,8 @@ const materialscolumns = [
 	{ field: 'name', headerName: 'Name', width: 150 },
 	{ field: 'hearts_recovered', headerName: 'Hearts Recovered', width: 150 },
 	{ field: 'cooking_effect', headerName: 'Cooking Effect', width: 150 },
-	{ field: 'description', headerName: 'Description', width: 1100 },
-	{ field: 'image', headerName: 'Image', width: 100 },
+	{ field: 'description', headerName: 'Description', width: 1200 },
+	{ field: 'image', headerName: 'Image', width: 600 },
 ];
 
 const foodcreaturescolumns = [
@@ -34,17 +34,17 @@ const foodcreaturescolumns = [
 	{ field: 'name', headerName: 'Name', width: 150 },
 	{ field: 'hearts_recovered', headerName: 'Hearts Recovered', width: 150 },
 	{ field: 'cooking_effect', headerName: 'Cooking Effect', width: 150 },
-	{ field: 'description', headerName: 'Description', width: 1100 },
-	{ field: 'image', headerName: 'Image', width: 100 },
+	{ field: 'description', headerName: 'Description', width: 1500 },
+	{ field: 'image', headerName: 'Image', width: 600 },
 ];
 
 const nonfoodcreaturescolumns = [
 	{ field: 'id', headerName: 'ID', width: 70 },
 	{ field: 'name', headerName: 'Name', width: 200 },
 	{ field: 'common_locations', headerName: 'Common Locations', width: 300 },
-	{ field: 'drops', headerName: 'Drops', width: 500 },
-	{ field: 'description', headerName: 'Description', width: 1100 },
-	{ field: 'image', headerName: 'Image', width: 100 },
+	{ field: 'drops', headerName: 'Drops', width: 400 },
+	{ field: 'description', headerName: 'Description', width: 1450 },
+	{ field: 'image', headerName: 'Image', width: 600 },
 ];
 
 const treasurecolumns = [
@@ -52,8 +52,8 @@ const treasurecolumns = [
 	{ field: 'name', headerName: 'Name', width: 200 },
 	{ field: 'common_locations', headerName: 'Common Locations', width: 300 },
 	{ field: 'drops', headerName: 'Drops', width: 500 },
-	{ field: 'description', headerName: 'Description', width: 1100 },
-	{ field: 'image', headerName: 'Image', width: 100 },
+	{ field: 'description', headerName: 'Description', width: 1500 },
+	{ field: 'image', headerName: 'Image', width: 600 },
 ];
 
 function BotwCompendium(props) {
@@ -80,7 +80,7 @@ function BotwCompendium(props) {
 	}, []);
 
 	return (
-		<div style={{ height: 700, width: '100%' }}>
+		<div style={{ height: 700, width: '120%' }}>
 			<h1>Breath of the Wild: Hyrule Compendium</h1>
 			<h2>Equipment</h2>
 			<DataGrid rows={equipData} columns={equipcolumns} />

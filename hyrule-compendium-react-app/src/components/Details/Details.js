@@ -1,63 +1,102 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 
 function Details(props) {
-	const [equipData, setEquipData] = useState([]);
-	const [treasureData, setTreasureData] = useState([]);
-	const [foodCreaturesData, setFoodCreaturesData] = useState([]);
-	const [nonfoodCreaturesData, setNonFoodCreaturesData] = useState([]);
-	const [materialsData, setMaterialsData] = useState([]);
-	const [monstersData, setMonstersData] = useState([]);
+	const [idData, setIdData] = useState([]);
+	const [nameData, setNameData] = useState([]);
+	const [attackData, setAttackData] = useState([]);
+	const [defenseData, setDefenseData] = useState([]);
+	const [categoryData, setCategoryData] = useState([]);
+	const [locationData, setLocationData] = useState([]);
+	const [descriptionData, setDescriptionData] = useState([]);
+	const [imageData, setImageData] = useState([]);
+	const [dropsData, setDropsData] = useState([]);
+	const [heartsrecoveredData, setHeartsRecoveredData] = useState([]);
+	const [cookingeffectData, setCookingEffectData] = useState([]);
 
-	let url = 'https://botw-compendium.herokuapp.com/api/v2/all';
+	const entryurl = 'https://botw-compendium.herokuapp.com/api/v2/entry/';
+
+	const { id } = useParams();
+
 	useEffect(() => {
+		const url = 'https://botw-compendium.herokuapp.com/api/v2/entry/360';
 		fetch(url)
 			.then((response) => response.json())
 			.then((json) => {
-				setEquipData(json.data.equipment);
-				setTreasureData(json.data.treasure);
-				setFoodCreaturesData(json.data.creatures.food);
-				setNonFoodCreaturesData(json.data.creatures.non_food);
-				setMaterialsData(json.data.materials);
-				setMonstersData(json.data.monsters);
+				setIdData(json.data.id);
+				setNameData(json.data.name);
+				setAttackData(json.data.attack);
+				setCategoryData(json.data.category);
+				setLocationData(json.data.common_locations);
+				setDefenseData(json.data.defense);
+				setDescriptionData(json.data.description);
+				setImageData(json.data.image);
+				setDropsData(json.data.drops);
+				setHeartsRecoveredData(json.data.hearts_recovered);
+				setCookingEffectData(json.data.cooking_effect);
 			})
 			.catch(console.error);
 	}, []);
 
 	return (
-		<footer>
-			<h2>Details</h2>
+		<main>
+			<h2>Hyrule Compendium: Item Details</h2>
 
 			<table>
 				<thead>
-					<th>Detailed Item</th>
-					<th>MasterSword</th>
+					<tr>
+						<td>Name</td>
+						<td>{nameData}</td>
+					</tr>
 				</thead>
-				<tr>
-					<td>Category</td>
-					<td>Equipment</td>
-				</tr>
-				<tr>
-					<td>Location</td>
-					<td>Lost Woods</td>
-				</tr>
-				<tr>
-					<td>Attack</td>
-					<td>30</td>
-				</tr>
-				<tr>
-					<td>Defense</td>
-					<td>0</td>
-				</tr>
-				<tr>
-					<td>
-						The legendary sword that seals the darkness. Its blade gleams with a
-						sacred luster that can oppose the Calamity. Only a hero chosen by
-						the sword itself can wield it.
-					</td>
-				</tr>
+				<tbody>
+					<tr>
+						<td>ID:</td>
+						<td>{idData}</td>
+					</tr>
+					<tr>
+						<td>Category:</td>
+						<td>{categoryData}</td>
+					</tr>
+					<tr>
+						<td>Location:</td>
+						<td>{locationData}</td>
+					</tr>
+					<tr>
+						<td>Drops:</td>
+						<td>{dropsData}</td>
+					</tr>
+
+					<tr>
+						<td>Attack:</td>
+						<td>{attackData}</td>
+					</tr>
+					<tr>
+						<td>Defense:</td>
+						<td>{defenseData}</td>
+					</tr>
+					<tr>
+						<td>Hearts Recovered:</td>
+						<td>{heartsrecoveredData}</td>
+					</tr>
+					<tr>
+						<td>Cooking Effect:</td>
+						<td>{cookingeffectData}</td>
+					</tr>
+
+					<tr>
+						<td>Description: </td>
+						<td>{descriptionData}</td>
+					</tr>
+					<tr>
+						<td>Image: </td>
+						<td>
+							<img src={imageData} alt={nameData} />
+						</td>
+					</tr>
+				</tbody>
 			</table>
-		</footer>
+		</main>
 	);
 }
 

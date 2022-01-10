@@ -9,16 +9,6 @@ import Details from './components/Details/Details';
 import { Route, Routes, Link } from 'react-router-dom';
 
 function App() {
-	const [searchCompendium, setSearchCompendium] = useState('');
-
-	function handleChange(event) {
-		setSearchCompendium(event.target.value);
-	}
-	function handleSubmit(event) {
-		event.preventDefault();
-		BotwCompendium();
-	}
-
 	return (
 		<div>
 			<header>

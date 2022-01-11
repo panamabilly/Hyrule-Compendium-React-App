@@ -46,7 +46,7 @@ function SearchCompendium() {
 			<table id='details'>
 				<thead>
 					<tr>
-						<td>Name</td>
+						<td>Name:</td>
 						<td>{searchApi.name}</td>
 					</tr>
 				</thead>

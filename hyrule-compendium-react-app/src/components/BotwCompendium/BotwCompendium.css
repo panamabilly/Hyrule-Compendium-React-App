@@ -1,5 +1,35 @@
+html {
+	z-index: 0;
+	background-image: url(https://www.zeldadungeon.net/wiki/images/d/d6/Link_looking_over_BOTW_Hyrule.jpg);
+	opacity: 1;
+	background-size: 100% 150%;
+}
 main {
 	display: grid;
 	place-items: center;
-	opacity: 0.85;
+	opacity: 1;
+}
+.equipment-datagrid {
+	background: white;
+	opacity: 0.5;
+}
+.monsters-datagrid {
+	background: white;
+	opacity: 0.5;
+}
+.materials-datagrid {
+	background: white;
+	opacity: 0.5;
+}
+.nonfoodcreatures-datagrid {
+	background: white;
+	opacity: 0.5;
+}
+.foodcreatures-datagrid {
+	background: white;
+	opacity: 0.5;
+}
+.treasures-datagrid {
+	background: white;
+	opacity: 0.5;
 }

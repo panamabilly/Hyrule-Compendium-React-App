@@ -10,7 +10,7 @@ function AboutCompendium(props) {
 						<b>About</b>
 					</h4>
 					<p>
-						Please click on the Compendium Button to see the entire Breathe of
+						Please click on the Compendium Button to see the entire Breath of
 						the Wild Compendium separated into 6 categories. Non-Food Creatures,
 						Food Creatures, Equipment, Monsters, Materials and Treasures.
 					</p>

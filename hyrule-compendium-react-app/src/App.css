@@ -1,10 +1,10 @@
 .App {
-	opacity: 0.9;
+	opacity: 1;
 }
 html {
 	z-index: 0;
 	background-image: url(https://www.zeldadungeon.net/wiki/images/d/d6/Link_looking_over_BOTW_Hyrule.jpg);
-	opacity: 0.8;
+	opacity: 1;
 }
 
 .App__header {
@@ -12,7 +12,7 @@ html {
 	display: flex;
 	justify-content: center;
 	color: black;
-	opacity: 0.8;
+	opacity: 1;
 }
 
 .App__navigation-button {
@@ -35,7 +35,7 @@ html {
 
 	text-align: center;
 	transition: all 0.15s;
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 .App__navigation-button:active {

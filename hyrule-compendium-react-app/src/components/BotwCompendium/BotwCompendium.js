@@ -83,18 +83,21 @@ function BotwCompendium(props) {
 				<h1> Compendium</h1>
 				<h2>Equipment</h2>
 				<DataGrid
+					className='equipment-datagrid'
 					rows={equipData}
 					onCellClick={(equipData) => history(`/Details/${equipData.id}`)}
 					columns={equipcolumns}
 				/>
 				<h2>Monsters</h2>
 				<DataGrid
+					className='monsters-datagrid'
 					rows={monstersData}
 					onCellClick={(monstersData) => history(`/Details/${monstersData.id}`)}
 					columns={monstercolumns}
 				/>
 				<h2>Materials</h2>
 				<DataGrid
+					className='materials-datagrid'
 					rows={materialsData}
 					onCellClick={(materialsData) =>
 						history(`/Details/${materialsData.id}`)
@@ -103,6 +106,7 @@ function BotwCompendium(props) {
 				/>
 				<h2> Creatures Non-Food Related</h2>
 				<DataGrid
+					className='nonfoodcreatures-datagrid'
 					rows={nonfoodCreaturesData}
 					onCellClick={(nonfoodCreaturesData) =>
 						history(`/Details/${nonfoodCreaturesData.id}`)
@@ -111,6 +115,7 @@ function BotwCompendium(props) {
 				/>
 				<h2>Creatures Food Related</h2>
 				<DataGrid
+					className='foodcreatures-datagrid'
 					rows={foodCreaturesData}
 					onCellClick={(foodCreaturesData) =>
 						history(`/Details/${foodCreaturesData.id}`)
@@ -119,6 +124,7 @@ function BotwCompendium(props) {
 				/>
 				<h2>Treasures</h2>
 				<DataGrid
+					className='treasures-datagrid'
 					rows={treasureData}
 					onCellClick={(treasureData) => history(`/Details/${treasureData.id}`)}
 					foodCreaturesData

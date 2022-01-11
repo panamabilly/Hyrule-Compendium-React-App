@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './SearchCompendium.css';
 
 function SearchCompendium() {
 	// searchbar state
@@ -26,10 +27,10 @@ function SearchCompendium() {
 			.catch((err) => console.log(err));
 	}
 	return (
-		<section>
+		<main>
 			<form onSubmit={handleSubmit} className='search-bar'>
 				<label htmlFor='search'>
-					<span className='search'> Search Compendium</span>
+					<span className='search'> Search Compendium </span>
 				</label>
 				<input
 					type='text'
@@ -41,8 +42,8 @@ function SearchCompendium() {
 				/>
 				<button type='submit'>Search</button>
 			</form>
-
-			<table>
+			<h3>Search Results</h3>
+			<table id='details'>
 				<thead>
 					<tr>
 						<td>Name</td>
@@ -96,7 +97,7 @@ function SearchCompendium() {
 					</tr>
 				</tbody>
 			</table>
-		</section>
+		</main>
 	);
 }
 

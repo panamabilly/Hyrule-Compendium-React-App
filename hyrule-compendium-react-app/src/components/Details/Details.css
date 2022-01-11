@@ -1,0 +1,28 @@
+main {
+	display: grid;
+	place-items: center;
+	opacity: 0.85;
+}
+
+#item-details {
+	border-collapse: collapse;
+	width: 25%;
+	border: 1px solid black;
+	padding: 8px;
+}
+
+#item-details tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#item-details tr:hover {
+	background-color: #ddd;
+}
+
+#item-details thead {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #04aa6d;
+	color: white;
+}

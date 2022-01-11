@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './Details.css';
 
 function Details(props) {
 	const [idData, setIdData] = useState([]);
@@ -43,7 +44,7 @@ function Details(props) {
 		<main>
 			<h2>Hyrule Compendium: Item Details</h2>
 
-			<table>
+			<table id='item-details'>
 				<thead>
 					<tr>
 						<td>Name</td>

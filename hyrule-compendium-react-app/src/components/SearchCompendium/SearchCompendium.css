@@ -1,3 +1,31 @@
+main {
+	display: grid;
+	place-items: center;
+	opacity: 0.85;
+}
 form {
 	font-size: x-large;
+}
+
+#details {
+	border-collapse: collapse;
+	width: 25%;
+	border: 1px solid black;
+	padding: 8px;
+}
+
+#details tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#details tr:hover {
+	background-color: #ddd;
+}
+
+#details thead {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #04aa6d;
+	color: white;
 }

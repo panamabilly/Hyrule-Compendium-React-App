@@ -10,7 +10,7 @@ import { Route, Routes, Link } from 'react-router-dom';
 
 function App() {
 	return (
-		<div>
+		<div id='App'>
 			<header>
 				<h1 className='App__header'>Breath of the Wild: Hyrule Compendium</h1>
 			</header>
@@ -36,10 +36,12 @@ function App() {
 							type='button'
 							value='About'
 						/>
-						<img
-							className='App__background'
-							src='https://www.zeldadungeon.net/wiki/images/d/d6/Link_looking_over_BOTW_Hyrule.jpg'
-							alt='Breath of the Wild Background Image'
+					</Link>
+					<Link to='/'>
+						<input
+							className='App__navigation-button'
+							type='button'
+							value='Home'
 						/>
 					</Link>
 				</nav>

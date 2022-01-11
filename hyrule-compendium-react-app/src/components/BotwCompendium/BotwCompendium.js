@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { useNavigate } from 'react-router-dom';
+import './BotwCompendium.css';
 
 const equipcolumns = [
 	{ field: 'id', headerName: 'ID', width: 70 },
@@ -83,50 +84,54 @@ function BotwCompendium(props) {
 	}, []);
 
 	return (
-		<div style={{ height: 700, width: '120%' }}>
-			<h1>Breath of the Wild: Hyrule Compendium</h1>
-			<h2>Equipment</h2>
-			<DataGrid
-				rows={equipData}
-				onCellClick={(equipData) => history(`/Details/${equipData.id}`)}
-				columns={equipcolumns}
-			/>
-			<h2>Monsters</h2>
-			<DataGrid
-				rows={monstersData}
-				onCellClick={(monstersData) => history(`/Details/${monstersData.id}`)}
-				columns={monstercolumns}
-			/>
-			<h2>Materials</h2>
-			<DataGrid
-				rows={materialsData}
-				onCellClick={(materialsData) => history(`/Details/${materialsData.id}`)}
-				columns={materialscolumns}
-			/>
-			<h2> Creatures Non-Food Related</h2>
-			<DataGrid
-				rows={nonfoodCreaturesData}
-				onCellClick={(nonfoodCreaturesData) =>
-					history(`/Details/${nonfoodCreaturesData.id}`)
-				}
-				columns={nonfoodcreaturescolumns}
-			/>
-			<h2>Creatures Food Related</h2>
-			<DataGrid
-				rows={foodCreaturesData}
-				onCellClick={(foodCreaturesData) =>
-					history(`/Details/${foodCreaturesData.id}`)
-				}
-				columns={foodcreaturescolumns}
-			/>
-			<h2>Treasures</h2>
-			<DataGrid
-				rows={treasureData}
-				onCellClick={(treasureData) => history(`/Details/${treasureData.id}`)}
-				foodCreaturesData
-				columns={treasurecolumns}
-			/>
-		</div>
+		<main>
+			<div style={{ height: 500, width: '175%' }}>
+				<h1> Compendium</h1>
+				<h2>Equipment</h2>
+				<DataGrid
+					rows={equipData}
+					onCellClick={(equipData) => history(`/Details/${equipData.id}`)}
+					columns={equipcolumns}
+				/>
+				<h2>Monsters</h2>
+				<DataGrid
+					rows={monstersData}
+					onCellClick={(monstersData) => history(`/Details/${monstersData.id}`)}
+					columns={monstercolumns}
+				/>
+				<h2>Materials</h2>
+				<DataGrid
+					rows={materialsData}
+					onCellClick={(materialsData) =>
+						history(`/Details/${materialsData.id}`)
+					}
+					columns={materialscolumns}
+				/>
+				<h2> Creatures Non-Food Related</h2>
+				<DataGrid
+					rows={nonfoodCreaturesData}
+					onCellClick={(nonfoodCreaturesData) =>
+						history(`/Details/${nonfoodCreaturesData.id}`)
+					}
+					columns={nonfoodcreaturescolumns}
+				/>
+				<h2>Creatures Food Related</h2>
+				<DataGrid
+					rows={foodCreaturesData}
+					onCellClick={(foodCreaturesData) =>
+						history(`/Details/${foodCreaturesData.id}`)
+					}
+					columns={foodcreaturescolumns}
+				/>
+				<h2>Treasures</h2>
+				<DataGrid
+					rows={treasureData}
+					onCellClick={(treasureData) => history(`/Details/${treasureData.id}`)}
+					foodCreaturesData
+					columns={treasurecolumns}
+				/>
+			</div>
+		</main>
 	);
 }
 

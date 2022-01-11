@@ -9,12 +9,12 @@ The Breathe of the Wild Compendium is a React website which features the Hyrule 
 ![Search-Screenshot](https://user-images.githubusercontent.com/93820113/148896437-132b5a12-2cf1-4630-8514-444a3e288d66.png)
 
  # Technologies Used
- HTML, CSS, JavaScript, React, React Router, DataGrid 
+ HTML, CSS, JavaScript, React, React Router, DataGrid, MUI Material 
  
  # Getting Started/Installation Instructions
  Link to the deployed website is down below:
  https://botw-hyrule-compendium-react.netlify.app
  
- You can fork and clone this repository. The following dependencies need to be installed inorder to work. In the terminal install, the following dependencies by typing what is found in  "quotes". Install npm "npm install -g npm"; Create react project "npx create-react-app my-app; Then change directories  "cd my-app"; Then start npm server "npm start"; Install React Router "npm install react-router-dom@6", Install mui material "npm install @mui/material"; Install DataGrid "npm install @mui/x-data-grid" Please note to run this installation after installing data grid "npm install @mui/material @emotion/react @emotion/styled", there were compliation errors with data grid that got resolved by running the install. The stack overflow link to resolve the issue is linked here: 'https://stackoverflow.com/questions/69351693/mui-v5-cant-resolve-emotion-react-in-node-modules-mui-styled-engine'
+ You can fork and clone this repository. The following dependencies need to be installed inorder to work. In the terminal install, the following dependencies by typing what is found in  "quotes". Install npm "npm install -g npm"; Create react project "npx create-react-app my-app; Then change directories  "cd my-app"; Then start npm server "npm start"; Install React Router "npm install react-router-dom@6", Install mui material "npm install @mui/material @emotion/react @emotion/styled"; Install DataGrid "npm install @mui/x-data-grid". 
  # Contribution Guidelines
   If you would like to contribute to your code, identify bugs, and propose improvements. Please submit a pull request and I will get to it as soon as I can.

@@ -1,6 +1,6 @@
 # Hyrule-Compendium-React-App
 # Description
-The Breath of the Wild Compendium is a React website which features the Hyrule Compendium API for The Legend of Zelda: Breathe of the Wild Video Game, which contains all the Creatures, Equipment, Materials, Monsters and Treasures found in the the game. The compendium contains useful information which include images, locations, descriptions and creature and enemy drops. The motivation of the project was that the Hyrule API looked like a fun hassle free API tow work and it involved one of my favorite games of all time. My project helps solves quick questions about the game.
+The Breath of the Wild Compendium is a React website which features the Hyrule Compendium API for The Legend of Zelda: Breath of the Wild Video Game, which contains all the Creatures, Equipment, Materials, Monsters and Treasures found in the the game. The compendium contains useful information which include images, locations, descriptions and creature and enemy drops. The motivation of the project was that the Hyrule API looked like a fun hassle free API to work with and it involved one of my favorite games of all time. My project helps solves quick questions about the game.
 # App-Screenshots
 ![Compendium-Screenshot](https://user-images.githubusercontent.com/93820113/148896388-ff5160a7-0eb3-4999-a82d-07cf8234d37e.png)
 

@@ -44,7 +44,7 @@ As a user I would like to see details like likely location, enemy drops, weapon 
 
 ## API
 
-API LINK
+# API LINK
 https://botw-compendium.herokuapp.com/api/v2
 
 LINK TO DOCUMENTATION FOR API

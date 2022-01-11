@@ -10,7 +10,6 @@ const equipcolumns = [
 	{ field: 'defense', headerName: 'Defense', width: 70 },
 	{ field: 'common_locations', headerName: 'Common Locations', width: 300 },
 	{ field: 'description', headerName: 'Description', width: 1200 },
-	{ field: 'image', headerName: 'Image', width: 600 },
 ];
 
 const monstercolumns = [
@@ -19,7 +18,6 @@ const monstercolumns = [
 	{ field: 'common_locations', headerName: 'Common Locations', width: 300 },
 	{ field: 'drops', headerName: 'Drops', width: 900 },
 	{ field: 'description', headerName: 'Description', width: 1500 },
-	{ field: 'image', headerName: 'Image', width: 600 },
 ];
 
 const materialscolumns = [
@@ -28,7 +26,6 @@ const materialscolumns = [
 	{ field: 'hearts_recovered', headerName: 'Hearts Recovered', width: 150 },
 	{ field: 'cooking_effect', headerName: 'Cooking Effect', width: 150 },
 	{ field: 'description', headerName: 'Description', width: 1200 },
-	{ field: 'image', headerName: 'Image', width: 600 },
 ];
 
 const foodcreaturescolumns = [
@@ -37,7 +34,6 @@ const foodcreaturescolumns = [
 	{ field: 'hearts_recovered', headerName: 'Hearts Recovered', width: 150 },
 	{ field: 'cooking_effect', headerName: 'Cooking Effect', width: 150 },
 	{ field: 'description', headerName: 'Description', width: 1500 },
-	{ field: 'image', headerName: 'Image', width: 600 },
 ];
 
 const nonfoodcreaturescolumns = [
@@ -46,7 +42,6 @@ const nonfoodcreaturescolumns = [
 	{ field: 'common_locations', headerName: 'Common Locations', width: 300 },
 	{ field: 'drops', headerName: 'Drops', width: 400 },
 	{ field: 'description', headerName: 'Description', width: 1450 },
-	{ field: 'image', headerName: 'Image', width: 600 },
 ];
 
 const treasurecolumns = [
@@ -55,7 +50,6 @@ const treasurecolumns = [
 	{ field: 'common_locations', headerName: 'Common Locations', width: 300 },
 	{ field: 'drops', headerName: 'Drops', width: 500 },
 	{ field: 'description', headerName: 'Description', width: 1500 },
-	{ field: 'image', headerName: 'Image', width: 600 },
 ];
 
 function BotwCompendium(props) {

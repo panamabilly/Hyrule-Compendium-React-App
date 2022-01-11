@@ -16,10 +16,9 @@ function AboutCompendium(props) {
 					</p>
 					<p>
 						If you need to search a item detail please click on the Search
-						button. You are able to search the compendium by name. Spaces in the
-						name need to be represented as a underscores, Ex. "master_sword".
-						You also have the ability to obtain the items by clicking on the row
-						of the compendium to get more details.
+						button. You are able to search the compendium by name or id. You
+						also have the ability to obtain the item details by clicking on the
+						row of the compendium to get more details.
 					</p>
 					<p>
 						Many thanks to Aarav Borthakur for creating the BOTW: Hyrule

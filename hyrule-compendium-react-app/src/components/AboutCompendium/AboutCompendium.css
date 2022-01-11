@@ -1,0 +1,21 @@
+html {
+	z-index: 0;
+	background-image: url(https://www.zeldadungeon.net/wiki/images/d/d6/Link_looking_over_BOTW_Hyrule.jpg);
+	opacity: 1;
+	background-size: 100% 150%;
+	height: 722.22px;
+	width: 1226;
+}
+main {
+	display: grid;
+	place-items: center;
+	opacity: 1;
+}
+.card {
+	border-collapse: collapse;
+	width: 25%;
+	border: 1px solid black;
+	padding: 8px;
+	background: white;
+	opacity: 0.5;
+}

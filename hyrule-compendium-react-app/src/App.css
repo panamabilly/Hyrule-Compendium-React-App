@@ -1,0 +1,55 @@
+.App {
+	opacity: 1;
+}
+html {
+	z-index: 0;
+	background-image: url(https://www.zeldadungeon.net/wiki/images/d/d6/Link_looking_over_BOTW_Hyrule.jpg);
+	opacity: 1;
+}
+
+.App__header {
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	color: black;
+	opacity: 1;
+}
+
+.App__navigation-button {
+	z-index: 1;
+	display: inline-flexbox;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 300px;
+	padding: 0.7em 2em;
+	border: 0.1em solid black;
+	margin: 0 5em 0.2em 0;
+	border-radius: 0.12em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: x-large;
+	color: black;
+	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+
+	text-align: center;
+	transition: all 0.15s;
+	opacity: 0.5;
+}
+
+.App__navigation-button:active {
+	color: #bbbbbb;
+	border-color: #bbbbbb;
+}
+.App__navigation-button:hover {
+	text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+	color: #aaaaaa;
+	border-color: #ffffff;
+}
+
+.App__navigation {
+}
+
+div {
+}

@@ -12,7 +12,10 @@ The Breathe of the Wild Compendium is a React website which features the Hyrule 
  HTML, CSS, JavaScript, React, React Router, DataGrid 
  
  # Getting Started/Installation Instructions
- This would likely describe how to use the application and the steps to fork, clone and run the application.
+ Link to the deployed website is down below:
+ https://botw-hyrule-compendium-react.netlify.app
  
+ You can fork and clone this repository. The following dependencies need to be installed inorder to work. In the terminal install, the following dependencies by typing what is found in  "quotes". Install npm "npm install -g npm"; Create react project "npx create-react-app my-app; Then change directories  "cd my-app"; Then start npm server "npm start"; Install React Router "npm install react-router-dom@6", Install mui material "npm install @mui/material"; Install DataGrid "npm install @mui/x-data-grid
+"
  # Contribution Guidelines
   If you would like to contribute to your code, identify bugs, and propose improvements. Please submit a pull request and I will get to it as soon as I can.
